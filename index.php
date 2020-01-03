@@ -9,7 +9,7 @@ spl_autoload_register(function($className) {
     require_once $filename;
 });
 
-$ldap = new EasyLdap('ldap://arlrawdcvm01.atni.local', 389, 3);
+$ldap = new EasyLdap('ldap://stryksta.test.local', 389, 3);
 
 // The default DN (Distinguished Name)
 $ldap->dn = 'OU=Users,DC=stryksta,DC=local';
